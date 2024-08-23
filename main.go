@@ -2,13 +2,16 @@ package main
 
 import (
 	"flag"
+	"github.com/imyakin/go-bot/clients/telegram"
 	"log"
 )
 
-func main() {
-	// t := mustToken()
+const (
+	tgBotHost = "api.telegram.org"
+)
 
-	// tgClient = telegram.New(token)
+func main() {
+	tgClient = telegram.New(tgBotHost, mustToken())
 
 	// fetcher = fetcher.New(tgClient)
 
